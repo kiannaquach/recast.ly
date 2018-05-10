@@ -1,10 +1,13 @@
 class VideoList extends React.Component {
-  
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="video-list">
         {this.props.videos.map((video, i) => 
-          <VideoListEntry videos={video} key={i}/>
+          <VideoListEntry videos={video} clickedItem={this.props.clickedList.bind(this)} key={i}/>
         )}
       </div>
     );
