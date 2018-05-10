@@ -4,7 +4,7 @@ class VideoListEntry extends React.Component {
   }
 
   handleClicks (video) {
-      this.props.clickedItem(video)
+    this.props.clickedItem(video);
   }
 
   render() {

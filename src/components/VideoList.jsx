@@ -6,8 +6,8 @@ class VideoList extends React.Component {
   render() {
     return (
       <div className="video-list">
-        {this.props.videos.map((video, i) => 
-          <VideoListEntry videos={video} clickedItem={this.props.clickedList.bind(this)} key={i}/>
+        {this.props.videos.map((video) => 
+          <VideoListEntry videos={video} clickedItem={this.props.clickedList.bind(this)} }/>
         )}
       </div>
     );

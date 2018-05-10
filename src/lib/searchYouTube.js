@@ -4,9 +4,13 @@ var searchYouTube = (options, callback) => {
     type: 'GET',
     data: options,
     success: function(data) {
-      callback(data)
+
+      callback(data);
+    },
+    error: function(err) {
+      console.log("FAILED:", err);
     }
-  })
+  });
 };
 
 
