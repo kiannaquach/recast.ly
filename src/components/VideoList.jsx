@@ -3,11 +3,11 @@ class VideoList extends React.Component {
   render() {
     return (
       <div className="video-list">
-          {this.props.videos.map((video, i) => 
-            <VideoListEntry videos={video} key={i}/>
-          )}
+        {this.props.videos.map((video, i) => 
+          <VideoListEntry videos={video} key={i}/>
+        )}
       </div>
-    )
+    );
   }
 }
 

@@ -1,4 +1,7 @@
 class VideoListEntry extends React.Component {
+  handleClicks() {
+    console.log('hello')
+  }
 
   render() {
     return (
@@ -7,16 +10,13 @@ class VideoListEntry extends React.Component {
           <img className="media-object" src={this.props.videos.snippet.thumbnails.default.url} alt="" />
         </div>
         <div className="media-body">  
-          <div className="video-list-entry-title">{this.props.videos.snippet.title}</div>
+          <div className="video-list-entry-title" onClick={this.handleClicks.bind(this)}>{this.props.videos.snippet.title}</div>
           <div className="video-list-entry-detail">{this.props.videos.snippet.description}</div>
         </div>
       </div>
-    )
+    );
   }
 }
-
-
-      // {console.log(props)}
 
 
 // PropTypes tell other developers what `props` a component expects

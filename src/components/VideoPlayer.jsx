@@ -12,7 +12,7 @@ class VideoPlayer extends React.Component {
           <div>{this.props.videos[0].snippet.description}</div>
         </div>
       </div>
-    )
+    );
   }
 }
 // ${props.videos.id.videoId}`}

@@ -1,12 +1,20 @@
 class App extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
-      
+     currentVideo : window.exampleVideoData[0]
     }
   }
 
+
+// make a function
+  // change the video to be played in videoPlayer 
+  updatedVideo() {
+    this.setState = {
+      currentVideo
+    }
+  }
+  
   render() {
     return (
       <div>
